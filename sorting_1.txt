@@ -1,0 +1,95 @@
+Sorting Algorithm:
+Sorting is a technique in DS which is used to arrange or order a collection of element or daa in particular order.
+It is helpful to search an element& analyze the data by making searching more efficient.
+
+Why We need Sorting  in DS?
+1.Search Efficiency:Sorted data allows for faster search operations.
+2.Data presentation:Sorted data makes more readability and improve presentation and anlysis of the data.
+3.Data Processing:many algo and data processing task like merge operation in Database benefits the sorted data.
+4.Optimized sorting:
+Shortest Path finding->Network.
+
+Algorithm->Size of data,Application requirement,Available resource->memory
+& Space.
+
+
+sort()->
+
+Types of Sorting Algorithm:
+1.Bubble Sort
+2.Selection Sort
+3.Insertion Sort
+4.Merge Sort
+5.Quick Sort
+6.Heap Sort
+7.Radix Sort
+8.Count Sort
+9.Bucket Sort
+10.Shell Sort
+
+
+
+Types of Sorting Algorithm:
+1.Bubble Sort->simple and inefficient sorting algorithm which repeatedly 
+swap adjacent element if they are in wrong order.
+
+2.Selection Sort:
+It is algorithm that finds minimum elements and swaps it with first unsorted element.
+
+3.Insertion Sort:
+It builds final sorted array one item at a time.it take each element from
+the input list and insert that input into its correct position within sorted portion of the array.
+
+
+4.Merge Sort:It is divide and conquer algorithm that divides array into smaller sub-array,sort them and then merge them together to produce a sorted array.
+
+5.Quick Sort:Quick sort is divide and conquer algorithm that select pivot element and partition the array into 2 sub array ,
+one with elements less than pivot and another with element greater than pivot.it then recursively sort the sub array.
+
+
+6.Heap Sort:Heap sort builds binary heap data structure and repeatedly extract max element from the heap and add it to sorted portion of the array.
+
+7.Radix Sort:A non-compartive sorting algorithm that works well for integer or string data,sorting digit or character from least significant to most significant bit.
+
+8.Count Sort:counting
+
+9.Bucket Sort:bucket numbering.
+10.Shell Sort:Shell sorting of extension to insertion sort that divides the input into smaller shells and sort each shell using insertion sort.
+The size of the shell decreases with each pass.
+
+
+
+Bubble Sorting-:
+it is simple algorithm that repeatedly steps through the list to be sorted,compares the adjacent element & SWAP them if they are wrong order
+.
+smaller elements get its name from the way smaller element becuase its float on top and  larger elements settled down to the bottom.
+
+
+
+Pass:1
+Pass     List             Compare(i,i+1)              SWAP            Result
+1        [5,3,1,4,2]      (5,3)                               Yes         [3,5,1,4,2]
+1        [3,5,1,4,2]      (5,1)                               Yes         [3,1,5,4,2]
+1        [3,1,5,4,2]      (5,4)                               Yes          [3,1,4,5,2]
+1        [3,1,4,5,2]       (5,2)                              Yes         [3,1,4,2,5]
+Pass:2
+2       [3,1,4,2,5]       (3,1)                               Yes          [1,3,4,2,5]
+2       [1,3,4,2,5]        (3,4)                               NO         [1,3,4,2,5]
+2       [1,3,4,2,5]        (4,2)                               YES         [1,3,2,4,5]
+2       [1,3,2,4,5]          (4,5)                              NO         [1,3,2,4,5]
+
+
+Pass 3:
+3       [1,3,2,4,5]         (1,3)                                No        [1,3,2,4,5]
+3        [1,3,2,4,5]         (3,2)                                Yes      [1,2,3,4,5]
+3.         [1,2,3,4,5]         (3,4)                               No      [1,2,3,4,5]
+
+Thrid-largest-3 
+
+Pass 4:
+4         [1,2,3,4,5]           (1,2)                     No              [1,2,3,4,5]
+
+
+No swapa are needed in fourth swap
+
+
